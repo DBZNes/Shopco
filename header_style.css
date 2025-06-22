@@ -1,0 +1,142 @@
+/* ---------- HEADER ---------- */
+/* ---------- Top Banner ---------- */
+.top-banner {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    padding: 8px 16px;
+    position: relative;
+}
+
+.top-banner a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.close-banner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+    color: #fff;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight:lighter;
+    cursor: pointer;
+}
+
+/* ---------- Main Header ---------- */
+.main-header {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 64px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    gap: 40px;
+}
+
+.logo a {
+    color: #000;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/* ----- Nav links ----- */
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.main-nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+
+/* --- Dropdown của Nav header --- */
+.shop-dropdown {
+    position: relative;
+}
+
+.shop-dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: #ddd 1px solid;
+    padding: 10px 0;
+    min-width: 140px;
+    z-index: 999;
+}
+
+.shop-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 16px;
+    color: #333;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f5f5f5;
+}
+
+/* ---------- Search bar ---------- */
+.logo, .main-navm .cart-user {
+    flex-shrink: 0;
+}
+
+.search-bar {
+    flex: 1;
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 12px 20px 12px 50px;
+    border: none;
+    border-radius: 999px;
+    font-size: 14px;
+    background-color: #f1f1f1;
+}
+
+.search-bar .search-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    pointer-events: none;
+}
+
+/* ---------- Header Icon ---------- */
+.cart-user {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0 32px;
+}
+
+.cart-user a {
+    color: #000;
+}
+
+
+
+
+
+

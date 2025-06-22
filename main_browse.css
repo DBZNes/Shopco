@@ -1,0 +1,100 @@
+/* ---------- Browse Section ---------- */
+.browse-style-section {
+    padding: 40px 0;
+}
+
+.browse-style-container {
+    background-color: #f0f0f0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 64px;
+    border-radius: 30px;
+}
+
+.browse-title {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.browse-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.browse-row {
+    display: grid;
+    gap: 15px;
+}
+
+.top-row {
+    grid-template-columns: 3fr 7fr;
+    height: 200px;
+}
+
+.bottom-row {
+    grid-template-columns: 7fr 3fr;
+    height: 200px;
+}
+
+.browse-item {
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: transform 0.5 ease;
+    cursor: pointer;
+}
+
+.browse-item:hover {
+    transform: translate(-2px, -2px);
+    color: #777;
+}
+
+.style-label {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+/* --- Grid item's background images */
+.casual {
+    background-image: url(./img/Casual\ Style.png);
+    transform: scaleX(-1);
+    justify-content: flex-end;
+    transition: transform 0.3s ease;
+}
+
+.casual .style-label {
+    transform: scaleX(-1);
+    left: auto;
+    right: 16px;
+}
+
+.casual:hover {
+    transform: scaleX(-1) translate(2px, -2px);
+}
+
+.formal {
+    background-image: url(./img/Formal\ Style.png);
+}
+
+.party {
+    background-image: url(./img/Party\ Style.png);
+}
+
+.gym {
+    background-image: url(./img/Gym\ Style.png);
+}
+
+
+
+
+
+
